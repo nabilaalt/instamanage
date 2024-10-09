@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Effortlessly manage your projects with our powerful platform. Boost productivity with real-time collaboration, task automation, and cloud sync.">
+    <meta name="keywords" content="project management, collaboration, productivity, cloud sync, task automation">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page</title>
+</head>
+<body class="bg-gray-100">
+
+<!-- Header Section -->
+<header class="bg-white">
+  <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Insta Manage</span>
+        <img class="h-8 w-auto" src="img/logo.png" alt="Company Logo">
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <!-- Hamburger button -->
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        onclick="toggleMenu()">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a href="#home" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+      <a href="#feature" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+      <a href="#testimonials" class="text-sm font-semibold leading-6 text-gray-900">Testimonials</a>
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a href="signin.html" class="text-sm font-semibold leading-6 text-gray-900">Sign in <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </nav>
+
+  <!-- Mobile menu, hidden by default -->
+  <div id="mobile-menu" class="hidden lg:hidden">
+    <div class="space-y-2 px-6 pt-2 pb-3">
+      <a href="#home" class="block text-base font-semibold leading-6 text-gray-900">Home</a>
+      <a href="#feature" class="block text-base font-semibold leading-6 text-gray-900">Features</a>
+      <a href="#testimonials" class="block text-base font-semibold leading-6 text-gray-900">Testimonials</a>
+    </div>
+    <div class="border-t border-gray-200 px-6 py-3">
+      <a href="signin.html" class="block text-base font-semibold leading-6 text-gray-900">Sign in</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative bg-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-24">
+      <!-- Hero Image -->
+      <div class="relative">
+        <img src="img/homepage.svg" alt="Main Hero Image" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+
+      <!-- Hero Text and CTA -->
+      <div>
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+         Manage your projects effortlessly!
+        </h1>
+        <p class="mt-4 text-lg leading-8 text-gray-800">
+          Our platform offers powerful tools to streamline your workflow and boost productivity. Designed for businesses of all sizes, it's simple, fast, and efficient
+        </p>
+        <div class="mt-8">
+          <a href="#feature" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-md text-lg font-semibold shadow hover:bg-gray-500">
+            Explore Our Features
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Section -->
+<div id ="feature" class="bg-gray-800 text-white py-10">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">Features That Make Us Stand Out</p>
+      <p class="mt-6 text-lg leading-8 text-white-600">With a user-friendly interface and advanced capabilities, we've got everything covered to enhance your productivity and simplify your tasks.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-white-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-500">
+              <img src="img/real-time.png" alt="Custom Icon" class="h-6 w-6">
+            </div>
+            Real-time collaboration 
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-white-600">Work with your team in real-time with instant updates.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-white-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-500">
+              <img src="img/task.png" alt="Custom Icon" class="h-6 w-6">
+            </div>
+            Task Automation
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-white-600"> Automate repetitive tasks to save time and reduce errors.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-white-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-500">
+              <img src="img/cloud.png" alt="Custom Icon" class="h-6 w-6">
+            </div>
+            Cloud Sync 
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-white-600">Access your projects anytime, anywhere from any device.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-white-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-500">
+              <img src="img/analyst.png" alt="Custom Icon" class="h-6 w-6">
+            </div>
+            Advanced Analytics
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-white-600">Gain insights into your team's performance with detailed analytics and reporting to help you make data-driven decisions.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<section id = "testimonials" class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+  
+  <div class="mx-auto max-w-7xl">
+    <!-- Centered and Styled Title -->
+    <h1 class="text-center text-4xl font-bold text-gray-900">Testimonials</h1>
+
+    <!-- Testimonial Grid -->
+    <div class="mt-10 grid gap-10 lg:grid-cols-3 lg:gap-16">
+      
+      <!-- Testimonial 1 -->
+      <figure>
+        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+          <p>"Instamanage keeps my work organized. The collaboration features allow our team to work effectively, and the reports generated are invaluable for decision-making."</p>
+        </blockquote>
+        <figcaption class="mt-10">
+          <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+            <div class="font-semibold text-gray-900">Judith Black</div>
+            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="text-gray-600">CEO of English Space</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- Testimonial 2 -->
+      <figure class="border-0"> 
+        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+          <p>“With in-depth analytics features, we can better understand our audience and boost engagement. The content scheduling process is also incredibly easy and efficient!"</p>
+        </blockquote>
+        <figcaption class="mt-10">
+          <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+            <div class="font-semibold text-gray-900">Sarah Putri</div>
+            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="text-gray-600">Social Media Specialist</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- Testimonial 3 -->
+      <figure>
+        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+          <p>“The automation features save us time, allowing us to focus on bigger marketing strategies. I highly recommend it for all businesses!"</p>
+        </blockquote>
+        <figcaption class="mt-10">
+          <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+            <div class="font-semibold text-gray-900">James Smith</div>
+            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="text-gray-600">CEO of Workcation</div>
+          </div>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+
+      <!-- Brief Information -->
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl font-bold">Insta Manage</h2>
+        <p class="mt-4 text-gray-400">
+          We provide the best solutions to grow your business and manage your projects effectively. Let's stay connected and work together to create amazing experiences!
+        </p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="flex space-x-6">
+        <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+          <span class="sr-only">Facebook</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12.07c0-5.522-4.478-10-10-10S2 6.548 2 12.07c0 4.991 3.657 9.126 8.438 9.878v-6.988h-2.54v-2.891h2.54v-2.19c0-2.507 1.493-3.891 3.774-3.891 1.094 0 2.238.195 2.238.195v2.455h-1.261c-1.244 0-1.63.776-1.63 1.569v1.862h2.773l-.443 2.891h-2.33v6.988C18.343 21.196 22 17.061 22 12.07z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+          <span class="sr-only">Twitter</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M23 3a10.55 10.55 0 01-2.829.775A4.926 4.926 0 0022.338 2c-.957.568-2.016.978-3.149 1.2A4.92 4.92 0 0016.616 2c-2.737 0-4.948 2.213-4.948 4.946 0 .39.045.768.128 1.13-4.106-.205-7.748-2.173-10.192-5.165a4.93 4.93 0 00-.667 2.482c0 1.713.87 3.228 2.188 4.116a4.932 4.932 0 01-2.239-.62v.062c0 2.39 1.697 4.386 3.946 4.838a4.962 4.962 0 01-2.229.085c.63 1.957 2.448 3.379 4.604 3.417a9.867 9.867 0 01-7.313 2.03A13.903 13.903 0 0021.086 5.031c0-.21-.005-.42-.015-.63A9.946 9.946 0 0023 3z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-pink-600 transition">
+          <span class="sr-only">Instagram</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.342 3.608 1.317.976.975 1.255 2.242 1.317 3.608.058 1.266.07 1.646.07 4.851s-.012 3.585-.07 4.851c-.062 1.366-.342 2.633-1.317 3.608-.975.976-2.242 1.255-3.608 1.317-1.266.058-1.646.07-4.851.07s-3.585-.012-4.851-.07c-1.366-.062-2.633-.342-3.608-1.317-.976-.975-1.255-2.242-1.317-3.608-.058-1.266-.07-1.646-.07-4.851s.012-3.585.07-4.851c.062-1.366.342-2.633 1.317-3.608.975-.976 2.242-1.255 3.608-1.317 1.266-.058 1.646-.07 4.851-.07zm0-2.163C8.756 0 8.332.015 7.052.072 5.751.13 4.489.423 3.49 1.423 2.49 2.422 2.197 3.684 2.139 4.985c-.057 1.28-.072 1.704-.072 4.848s.015 3.569.072 4.848c.058 1.301.351 2.563 1.351 3.563s2.262 1.292 3.563 1.351c1.28.057 1.704.072 4.848.072s3.569-.015 4.848-.072c1.301-.058 2.563-.351 3.563-1.351s1.292-2.262 1.351-3.563c.057-1.28.072-1.704.072-4.848s-.015-3.569-.072-4.848c-.058-1.301-.351-2.563-1.351-3.563S18.25.13 16.95.072C15.669.015 15.244 0 12 0z"/>
+            <path d="M12 5.838a6.163 6.163 0 100 12.326 6.163 6.163 0 000-12.326zm0 10.163a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-10.845a1.44 1.44 0 11-2.882 0 1.44 1.44 0 012.882 0z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-blue-700 transition">
+          <span class="sr-only">LinkedIn</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 20h-2.5v-11h2.5v11zm-1.25-12.281c-.861 0-1.562-.701-1.562-1.563 0-.861.701-1.562 1.562-1.562s1.563.701 1.563 1.562c0 .861-.702 1.563-1.563 1.563zm12.25 12.281h-2.5v-5.5c0-1.312-.027-3-1.875-3s-2.125 1.465-2.125 2.917v5.583h-2.5v-11h2.4v1.5h.035c.334-.634 1.155-1.297 2.381-1.297 2.547 0 3.017 1.675 3.017 3.854v7.943z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+      <p>&copy; 2024 InstaManage. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  
+    <script src="js/script.js"></script>
+</body>
+</html>

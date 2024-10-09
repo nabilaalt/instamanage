@@ -1,0 +1,27 @@
+/* Navbar sticky effect */
+#header {
+  transition: background-color 0.3s ease;
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation for features and testimonials */
+.feature-card, .testimonial {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
