@@ -10,13 +10,15 @@ Instamanage Landingpage is a mini project developed as a landing page for managi
 4. consistent interface.
 5. Custom Styling: Custom CSS is used to enhance the design with a unique and attractive color scheme.
 
-Tech Stack:
+**Tech Stack:**
 1. HTML: Used for creating the structure of the landing page.
 2. CSS: Provides custom styling for a modern, engaging design.
 3. JavaScript: Implements the functionality of the login and registration systems, as well as any interactive elements.
 4. Daisy UI (Tailwind CSS): A UI component library that accelerates the development of responsive, attractive designs.
 
 #preview
+
+
 Navbar
 ![alt text](<Screenshot (3023).png>) 
 
