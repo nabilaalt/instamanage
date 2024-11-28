@@ -16,16 +16,17 @@ Tech Stack:
 
 #preview
 Navbar
-![alt text](<Screenshot (3026).png>) 
-
-
-Feature Description
 ![alt text](<Screenshot (3023).png>) 
 
 
+Feature Description
+![alt text](<Screenshot (3024).png>)
+
+
 Testimonial and Footer
-![alt text](<Screenshot (3024).png>) 
+![alt text](<Screenshot (3025).png>) 
 
 
 Login Page
-![alt text](<Screenshot (3025).png>)
+
+![alt text](<Screenshot (3026).png>) 
